@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/imagenes.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/container.css">
   </head>
   <body class="bg-light"> <!-- color de fondo "gris" temporal-->
 
@@ -215,8 +216,117 @@
         </div>
       </div>
     </div>
+    <h2 class="text-center mb-4">Nuestras Sucursales</h2>
+    <div class="container-custom my-5">
+      <div class="row">
+        <!-- info y mapa -->
+        <div class="col-md-6 mb-4">
+          <h4>Casa Central</h4>
+          <p><strong>Dirección:</strong> Ruta T 350 N° 950, Valdivia. (Ex Cervecería Kunstmann)</p>
+          <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+          <p><strong>Horario:</strong> Lunes a Domingo, 12:00 - 23:00</p>
+          
+          <img src="imagenes/mapa1.png" alt="mapa sucursal 1" class="img-fluid rounded">
+        </div>
     
+        <!-- carrusel con fotos -->
+        <div class="col-md-6 mb-4">
+          <div id="carruselSucursal1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/sucursal1_1.png" class="d-block w-100 rounded" alt="sucursal1_1">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/sucursal1_2.jpg" class="d-block w-100 rounded" alt="sucursal1_2">
+              </div>
+              <!-- control carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselSucursal1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselSucursal1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container-custom my-5">
+      <div class="row">
+        <!-- carrusel 2 -->
+        <div class="col-md-6 mb-4">
+          <div id="carruselSucursal2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/sucursal2_1.png" class="d-block w-100 rounded" alt="sucursal2_1">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/sucursal2_2.png" class="d-block w-100 rounded" alt="sucursal2_2">
+              </div>
+            </div>
+            <!-- controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselSucursal2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselSucursal2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
     
+        <!-- info y mapa (derecha) -->
+        <div class="col-md-6 mb-4">
+          <h4>Isla Teja</h4>
+          <p><strong>Dirección:</strong> Los Alerces 31, Valdivia. (Ex Bar Bundor)</p>
+          <p><strong>Teléfono:</strong> +56 9 5678 1234</p>
+          <p><strong>Horario:</strong> Lunes a Domingo, 12:00 - 23:00</p>
+          <img src="imagenes/mapa2.png" alt="mapa sucursal 2" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-custom my-5">
+      
+      <div class="row">
+        <!-- info y mapa -->
+        <div class="col-md-6 mb-4">
+          <h4>Costanera</h4>
+          <p><strong>Dirección:</strong> Av. Arturo Prat 653, Valdivia. (Ex Parrilla de Thor)</p>
+          <p><strong>Teléfono:</strong> +56 9 1234 8765</p>
+          <p><strong>Horario:</strong> Lunes a Domingo, 12:00 - 23:00</p>
+          
+          <img src="imagenes/mapa3.png" alt="mapa sucursal 3" class="img-fluid rounded">
+        </div>
+    
+        <!-- carrusel con fotos -->
+        <div class="col-md-6 mb-4">
+          <div id="carruselSucursal3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/sucursal3_1.jpg" class="d-block w-100 rounded" alt="sucursal3_1">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/sucursal3_2.jpg" class="d-block w-100 rounded" alt="sucursal3_2">
+              </div>
+              <!-- control carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselSucursal3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselSucursal3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
