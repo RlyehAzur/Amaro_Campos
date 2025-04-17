@@ -216,8 +216,9 @@
         </div>
       </div>
     </div>
+    <!-- sucursales-->
     <h2 class="text-center mb-4">Nuestras Sucursales</h2>
-    <div class="container-custom my-5">
+    <div class="container container-custom my-5">
       <div class="row">
         <!-- info y mapa -->
         <div class="col-md-6 mb-4">
@@ -254,7 +255,7 @@
     </div>
   </div>
 
-    <div class="container-custom my-5">
+    <div class="container container-custom my-5">
       <div class="row">
         <!-- carrusel 2 -->
         <div class="col-md-6 mb-4">
@@ -290,7 +291,7 @@
       </div>
     </div>
     
-    <div class="container-custom my-5">
+    <div class="container container-custom my-5">
       
       <div class="row">
         <!-- info y mapa -->
@@ -327,7 +328,50 @@
       </div>
     </div>
   </div>
-
+<!-- formulario -->
+  <div class="container my-5 container-custom">
+    <h4 class="mb-4">Formulario de Consultas o Reclamos</h4>
+    <form>
+      <!-- nombre -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+  
+      <!-- correo -->
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+  
+      <!-- telefono -->
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono de contacto</label>
+        <input type="tel" class="form-control" id="telefono" pattern="[0-9]{9}" placeholder="Ej: 912345678" required>
+      </div>                                    <!-- placeholder = texto guía -->
+  
+      <!-- opciones -->
+      <div class="mb-3">
+        <label for="tipo" class="form-label">Tipo de mensaje</label>
+        <select class="form-select" id="tipo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="consulta">Consulta</option>
+          <option value="reclamo">Reclamo</option>
+        </select>
+      </div>
+  
+      <!-- mensaje -->
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje (máx. 500 caracteres)</label>
+        <textarea class="form-control" id="mensaje" rows="4" maxlength="500" required></textarea>
+        <small class="form-text text-muted">Puedes escribir hasta 500 caracteres.</small>
+      </div>
+  
+      <!-- boton de enviar -->
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
