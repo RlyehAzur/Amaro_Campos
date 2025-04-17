@@ -1,5 +1,4 @@
-/* imagenes de los cards */
-.card-img-top {     
-    height: 250px;
-    object-fit: cover;
+img {
+    border-radius: 12px; 
   }
+
