@@ -1,34 +1,164 @@
-<!doctype html>
+<!doctype html> <!--  -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Menú Carrusel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/imagenes.css">
+    <link rel="stylesheet" href="css/cards.css">
   </head>
-  <body>
-    <h1>El Aniquilador de Hambre</h1>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <body class="bg-light"> <!-- color de fondo "gris" -->
+
+    <div class="container my-5"> <!-- margenes -->
+      <h1 class="text-center mb-4">El Aniquilador de Hambre </h1>
+
+      <div id="menuCarrusel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+          <!-- slide sandwich -->
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/hamburguesa_basica.jpg" class="card-img-top" alt="Hambur_basica">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Básica</h5>
+                    <p class="card-text">$5.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/barros_luco.jpg" class="card-img-top" alt="Barros_luco">
+                  <div class="card-body">
+                    <h5 class="card-title">Barros Luco</h5>
+                    <p class="card-text">$4.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/hamburguesa_pollo.png" class="card-img-top" alt="Hambur_pollo">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Pollo</h5>
+                    <p class="card-text">$4.500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- slide platos -->
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/Bistec_pobre.jpg" class="card-img-top" alt="Bistec_pobre">
+                  <div class="card-body">
+                    <h5 class="card-title">Bistec a lo Pobre</h5>
+                    <p class="card-text">$7.500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/pastel_choclo.jpg" class="card-img-top" alt="Pastel_choclo">
+                  <div class="card-body">
+                    <h5 class="card-title">Pastel de Choclo</h5>
+                    <p class="card-text">$9.500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/cazuela.jpg" class="card-img-top" alt="Cazuela">
+                  <div class="card-body">
+                    <h5 class="card-title">Cazuela</h5>
+                    <p class="card-text">$6.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- slide bebidas -->
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/bebidas_lata.png" class="card-img-top" alt="Bebidas_lata">
+                  <div class="card-body">
+                    <h5 class="card-title">Bebidas en Lata</h5>
+                    <p class="card-text">$1.500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/limonada.jpg" class="card-img-top" alt="Limonada">
+                  <div class="card-body">
+                    <h5 class="card-title">Limonada</h5>
+                    <p class="card-text">$2.500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/cervezas.png" class="card-img-top" alt="Cervezas">
+                  <div class="card-body">
+                    <h5 class="card-title">Cervezas</h5>
+                    <p class="card-text">$3.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- slide postres -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/brownie_helado.jpg" class="card-img-top" alt="Brownie">
+                  <div class="card-body">
+                    <h5 class="card-title">Brownie con Helado</h5>
+                    <p class="card-text">$4.500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/banana_split.jpg" class="card-img-top" alt="Banana_split">
+                  <div class="card-body">
+                    <h5 class="card-title">Banana Split</h5>
+                    <p class="card-text">$5.500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagenes/torta.jpg" class="card-img-top" alt="Torta">
+                  <div class="card-body">
+                    <h5 class="card-title">Torta</h5>
+                    <p class="card-text">$4.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+
+        <!-- controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#menuCarrusel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#menuCarrusel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
